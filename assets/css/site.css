@@ -8,18 +8,19 @@ img { max-width: 100%; }
 .ax-nav { position: sticky; top: 0; z-index: 40; }
 .ax-nav-logo img { width: auto; }
 .ax-nav-main { margin-left: auto; }
+.ax-nav-links a { white-space: nowrap; }
 .ax-nav-toggle { display: none; margin-left: auto; width: 44px; height: 44px; border: 1px solid currentColor; border-radius: 999px; background: transparent; color: #000000; cursor: pointer; flex-direction: column; align-items: center; justify-content: center; gap: 4px; }
 .ax-nav-dark .ax-nav-toggle { color: #FFFFFF; }
 .ax-nav-toggle span { display: block; width: 18px; height: 2px; background: currentColor; }
-.ax-mobile-menu { position: fixed; inset: 69px 0 0; z-index: 39; background: #000000; padding: 24px 16px; display: flex; flex-direction: column; gap: 24px; overflow: auto; }
+.ax-mobile-menu { position: fixed; inset: 0; z-index: 39; background: #000000; padding: 104px 16px 24px; display: flex; flex-direction: column; gap: 24px; overflow: auto; }
 .ax-mobile-menu ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
 .ax-mobile-menu li a { display: block; padding: 16px 0; border-bottom: 1px solid #26302B; color: #FFFFFF; text-decoration: none; font-size: 20px; font-weight: 600; }
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   .ax-nav-main, .ax-nav-cta { display: none !important; }
   .ax-nav-toggle { display: inline-flex; }
 }
-@media (min-width: 901px) { .ax-mobile-menu { display: none !important; } }
-@media (min-width: 901px) and (max-width: 1240px) {
+@media (min-width: 1101px) { .ax-mobile-menu { display: none !important; } }
+@media (min-width: 1101px) and (max-width: 1240px) {
   .ax-nav { gap: 20px; }
   .ax-nav-links { gap: 16px; }
   .ax-nav-links a { font-size: 13px; }
@@ -51,6 +52,16 @@ img { max-width: 100%; }
 .ax-partner-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 24px; }
 .ax-partner .ax-partner-logo { height: 120px; background: #F7F7F7; }
 .ax-partner .ax-partner-logo img { max-height: 72px; max-width: 75%; }
+/* Página Agenda */
+.ax-agenda-lista { display: flex; flex-direction: column; border-top: 1px solid #DCE3DF; }
+.ax-agenda-item { display: grid; grid-template-columns: 120px minmax(0, 1fr) auto; gap: 32px; align-items: center; padding: 32px 0; border-bottom: 1px solid #DCE3DF; }
+.ax-agenda-data { display: flex; flex-direction: column; gap: 4px; }
+.ax-agenda-data strong { font-size: 40px; line-height: 40px; font-weight: 800; letter-spacing: -0.02em; }
+.ax-agenda-data span { font-size: 14px; line-height: 20px; font-weight: 600; color: #00773D; }
+.ax-agenda-info { display: flex; flex-direction: column; gap: 8px; }
+.ax-agenda-info h3 { margin: 0; font-size: 22px; line-height: 28px; font-weight: 700; }
+.ax-agenda-info p { margin: 0; font-size: 16px; line-height: 26px; color: #4D5752; max-width: 680px; }
+@media (max-width: 760px) { .ax-agenda-item { grid-template-columns: 1fr; gap: 16px; } .ax-agenda-item .ax-btn { justify-self: start; } }
 .ax-dialog-wrap form, .ax-modal form { display: grid; gap: 16px; }
 .ax-form-status { font-size: 14px; line-height: 21px; color: #B42318; }
 .ax-section-inner { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
