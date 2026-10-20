@@ -26,12 +26,26 @@
     '?text=' + encodeURIComponent('Olá, vim pelo site da ABM Experts.');
 
   document.querySelectorAll('.ax-nav-links, .ax-mobile-menu ul').forEach(function (ul) {
+    if (!ul.querySelector('a[href="agenda.html"]')) {
+      var liAgenda = document.createElement('li');
+      liAgenda.innerHTML = '<a href="agenda.html">Agenda</a>';
+      var refCom = ul.querySelector('a[href="comunidade.html"]');
+      if (refCom) ul.insertBefore(liAgenda, refCom.parentNode); else ul.appendChild(liAgenda);
+    }
     if (ul.querySelector('a[href="para-voce.html"]')) return;
     var li = document.createElement('li');
     li.innerHTML = '<a href="para-voce.html">Para você</a>';
     var ref = ul.querySelector('a[href="para-empresas.html"]');
     if (ref) ul.insertBefore(li, ref.parentNode); else ul.appendChild(li);
   });
+
+  var navEco = document.querySelector('footer nav[aria-label="Ecossistema"]');
+  if (navEco && !navEco.querySelector('a[href="agenda.html"]')) {
+    var refConteudo = navEco.querySelector('a[href="conteudo.html"]');
+    var aAgenda = document.createElement('a');
+    aAgenda.href = 'agenda.html'; aAgenda.textContent = 'Agenda';
+    if (refConteudo) { aAgenda.setAttribute('style', refConteudo.getAttribute('style')); refConteudo.parentNode.insertBefore(aAgenda, refConteudo.nextSibling); }
+  }
 
   var menuMovel = document.getElementById('menu-movel');
   if (menuMovel && !menuMovel.querySelector('.ax-fale-menu')) {
@@ -90,6 +104,8 @@
         .sort(function (a, b) { return (a.data || '').localeCompare(b.data || ''); });
     }
     if (!itens.length) {
+      var vazio = document.querySelector('[data-vazio="' + nome + '"]');
+      if (vazio) vazio.hidden = false;
       var bloco = box.closest('article, section');
       if (bloco && nome !== 'cursos') bloco.hidden = true;
       return [];
