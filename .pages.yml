@@ -78,3 +78,24 @@ content:
           - { name: cargo, label: "Descrição (ex.: Mentorada ABM Experts)", type: string }
           - { name: foto, label: "Foto (quadrada)", type: image }
           - { name: texto, label: "Depoimento (deixe uma linha em branco entre parágrafos)", type: text }
+  - name: parceiros
+    label: Parceiros
+    type: file
+    path: data/parceiros.json
+    format: json
+    fields:
+      - name: parceiros
+        label: Parceiros
+        type: object
+        list: true
+        fields:
+          - { name: nome, label: Nome, type: string }
+          - name: categoria
+            label: Categoria
+            type: select
+            options:
+              values: [Eventos, Ferramentas, Consultorias, Mídia paga, Agências]
+          - { name: destaque, label: "Especialidade (opcional, ex.: Petit comitês para ABM)", type: string }
+          - { name: logo, label: Logo, type: image }
+          - { name: texto, label: Minibio, type: text }
+          - { name: cta, label: "Texto do botão (ex.: Quero falar com a Bora)", type: string }
