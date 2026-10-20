@@ -1,0 +1,72 @@
+/* ABM Experts Brasil — generated from tokens.json */
+:root, [data-theme="light"] {
+  --green: #00BF63;
+  --green-hover: #00A956;
+  --black: #000000;
+  --black-hover: #1C211E;
+  --white: #FFFFFF;
+  --on-green: #000000;
+  --mist: #A9B3AE;
+  --night: #0E1210;
+  --night-line: #26302B;
+  --green-deep: #0B6B3F;
+  --green-mint: #7DE3B0;
+  --graphite: #767676;
+  --surface: #FFFFFF;
+  --surface-alt: #F3F6F4;
+  --surface-raised: #FFFFFF;
+  --line: #DCE3DF;
+  --line-strong: #747F79;
+  --ink: #000000;
+  --ink-muted: #4D5752;
+  --green-ink: #00773D;
+  --green-soft: #E2F7EC;
+  --focus-ring: #00773D;
+  --danger: #B42318;
+  --shadow-modal: 0 24px 64px rgba(0,0,0,0.18);
+}
+[data-theme="dark"] {
+  --surface: #000000;
+  --surface-alt: #0E1210;
+  --surface-raised: #151A17;
+  --line: #26302B;
+  --line-strong: #6E7A74;
+  --ink: #FFFFFF;
+  --ink-muted: #A9B3AE;
+  --green-ink: #00BF63;
+  --green-soft: #062A18;
+  --focus-ring: #00BF63;
+  --danger: #FF8A7A;
+  --shadow-modal: 0 24px 64px rgba(0,0,0,0.6);
+}
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --space-10: 128px;
+  --radius-sm: 4px;
+  --radius-md: 10px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+  --content-max: 1200px;
+  --text-max: 640px;
+  --rule-width: 2px;
+  --font-sans: Montserrat, "Helvetica Neue", Arial, sans-serif;
+}
+.display-strong { font-family: var(--font-sans); font-size: 72px; line-height: 72px; font-weight: 800; letter-spacing: -0.03em; }
+.display-light { font-family: var(--font-sans); font-size: 72px; line-height: 72px; font-weight: 300; letter-spacing: -0.02em; }
+.h1 { font-family: var(--font-sans); font-size: 48px; line-height: 52px; font-weight: 700; letter-spacing: -0.02em; }
+.h2 { font-family: var(--font-sans); font-size: 36px; line-height: 42px; font-weight: 700; letter-spacing: -0.015em; }
+.h3 { font-family: var(--font-sans); font-size: 22px; line-height: 28px; font-weight: 600; }
+.lead { font-family: var(--font-sans); font-size: 20px; line-height: 30px; font-weight: 400; }
+.body { font-family: var(--font-sans); font-size: 16px; line-height: 26px; font-weight: 400; }
+.small { font-family: var(--font-sans); font-size: 14px; line-height: 21px; font-weight: 400; }
+.eyebrow { font-family: var(--font-sans); font-size: 12px; line-height: 16px; font-weight: 600; letter-spacing: 0.14em; }
+.button { font-family: var(--font-sans); font-size: 15px; line-height: 20px; font-weight: 600; }
+.stat { font-family: var(--font-sans); font-size: 56px; line-height: 56px; font-weight: 800; letter-spacing: -0.03em; }

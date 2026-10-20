@@ -1,0 +1,85 @@
+{
+  "itens": [
+    {
+      "formato": "Podcast",
+      "titulo": "ABM na prática: erros e acertos do 1 to few",
+      "texto": "Conversa B2B, EP. 42. Lucas Sousa com Guilherme Sboarim e Giuliano Duccini sobre as seis etapas de um programa 1:few. Cerca de 75 minutos.",
+      "cta": "Assistir no YouTube",
+      "link": "https://www.youtube.com/watch?v=v_DvACGNukc",
+      "cta2": "Ouvir no Spotify",
+      "link2": "https://open.spotify.com/episode/5ed0f8oFms07sNyIehxKme"
+    },
+    {
+      "formato": "Framework",
+      "titulo": "Discovery de contas",
+      "texto": "Como mapear conta, comitê e oportunidade antes do primeiro contato.",
+      "cta": "Abrir o PDF",
+      "link": "",
+      "cta2": "",
+      "link2": ""
+    },
+    {
+      "formato": "Framework",
+      "titulo": "Triangulação de contatos",
+      "texto": "Encontrar os decisores e influenciadores certos dentro da conta.",
+      "cta": "Abrir o PDF",
+      "link": "",
+      "cta2": "",
+      "link2": ""
+    },
+    {
+      "formato": "Framework",
+      "titulo": "Share of wallet",
+      "texto": "Planilha para calcular e ampliar receita nas contas que você já tem.",
+      "cta": "Abrir o PDF",
+      "link": "",
+      "cta2": "",
+      "link2": ""
+    },
+    {
+      "formato": "Framework",
+      "titulo": "Jornadas e plays",
+      "texto": "Modelo para desenhar a jornada e os plays de cada tier de conta.",
+      "cta": "Abrir o PDF",
+      "link": "",
+      "cta2": "",
+      "link2": ""
+    },
+    {
+      "formato": "Framework",
+      "titulo": "Demonstração de resultados",
+      "texto": "Como apresentar o resultado do programa para a diretoria.",
+      "cta": "Abrir o PDF",
+      "link": "",
+      "cta2": "",
+      "link2": ""
+    },
+    {
+      "formato": "Framework",
+      "titulo": "Rito de reuniões recorrentes",
+      "texto": "A cadência entre marketing, SDR, vendas e CS para o programa não parar.",
+      "cta": "Abrir o PDF",
+      "link": "",
+      "cta2": "",
+      "link2": ""
+    },
+    {
+      "formato": "Skill de IA",
+      "titulo": "Pesquisa de conta com IA",
+      "texto": "Skill para montar o dossiê de uma conta antes do contato, com vídeo de uso no YouTube.",
+      "cta": "Ver a skill",
+      "link": "",
+      "cta2": "",
+      "link2": ""
+    },
+    {
+      "formato": "Skill de IA",
+      "titulo": "Mapa de comitê de compra",
+      "texto": "Skill para organizar decisores, influenciadores e o papel de cada um.",
+      "cta": "Ver a skill",
+      "link": "",
+      "cta2": "",
+      "link2": ""
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+/* Ajustes do site publicado (complementa tokens.css e components.css) */
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: Montserrat, "Helvetica Neue", Arial, sans-serif; background: #FFFFFF; color: #000000; }
+.page { width: 100%; overflow-x: hidden; }
+[hidden] { display: none !important; }
+img { max-width: 100%; }
+.ax-opt { font-weight: 400; color: #4D5752; }
+.ax-nav { position: sticky; top: 0; z-index: 40; }
+.ax-nav-logo img { width: auto; }
+.ax-nav-main { margin-left: auto; }
+.ax-nav-toggle { display: none; margin-left: auto; width: 44px; height: 44px; border: 1px solid currentColor; border-radius: 999px; background: transparent; color: #000000; cursor: pointer; flex-direction: column; align-items: center; justify-content: center; gap: 4px; }
+.ax-nav-dark .ax-nav-toggle { color: #FFFFFF; }
+.ax-nav-toggle span { display: block; width: 18px; height: 2px; background: currentColor; }
+.ax-mobile-menu { position: fixed; inset: 69px 0 0; z-index: 39; background: #000000; padding: 24px 16px; display: flex; flex-direction: column; gap: 24px; overflow: auto; }
+.ax-mobile-menu ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+.ax-mobile-menu li a { display: block; padding: 16px 0; border-bottom: 1px solid #26302B; color: #FFFFFF; text-decoration: none; font-size: 20px; font-weight: 600; }
+@media (max-width: 900px) {
+  .ax-nav-main, .ax-nav-cta { display: none !important; }
+  .ax-nav-toggle { display: inline-flex; }
+}
+@media (min-width: 901px) { .ax-mobile-menu { display: none !important; } }
+.ax-dialog-wrap form, .ax-modal form { display: grid; gap: 16px; }
+.ax-form-status { font-size: 14px; line-height: 21px; color: #B42318; }
+.ax-section-inner { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+@media (min-width: 720px) { .ax-section-inner { padding-left: 32px; padding-right: 32px; } }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible, summary:focus-visible { outline: 2px solid #00773D; outline-offset: 2px; }
+.ax-on-dark a:focus-visible, .ax-on-dark button:focus-visible { outline-color: #00BF63; }
