@@ -75,7 +75,7 @@
   }
 
   /* Listas que vêm dos arquivos em /data (editados pelo Pages CMS) */
-  var CHAVES = { agenda: 'eventos', conteudos: 'itens', cursos: 'cursos', depoimentos: 'depoimentos' };
+  var CHAVES = { agenda: 'eventos', conteudos: 'itens', cursos: 'cursos', depoimentos: 'depoimentos', parceiros: 'parceiros' };
 
   function renderLista(box, dados) {
     var alias = box.getAttribute('data-alias');
@@ -148,9 +148,14 @@
 
   /* Janelas (diagnóstico e indicação de parceiro) */
   var ultimoFoco = null;
-  function abrir(id) {
+  function abrir(id, origem) {
     var m = document.getElementById(id); if (!m) return;
     ultimoFoco = document.activeElement;
+    var parceiro = origem ? origem.getAttribute('data-parceiro') : '';
+    var campoParceiro = m.querySelector('input[name="Parceiro"]');
+    if (campoParceiro) campoParceiro.value = parceiro || '';
+    var rotulo = m.querySelector('[data-parceiro-label]');
+    if (rotulo) { rotulo.textContent = parceiro ? 'Parceiro escolhido: ' + parceiro : ''; rotulo.hidden = !parceiro; }
     m.hidden = false;
     document.body.style.overflow = 'hidden';
     var campo = m.querySelector('input, select, textarea'); if (campo) campo.focus();
@@ -162,7 +167,7 @@
   }
   document.addEventListener('click', function (ev) {
     var o = ev.target.closest('[data-open]');
-    if (o) { ev.preventDefault(); abrir(o.getAttribute('data-open')); return; }
+    if (o) { ev.preventDefault(); abrir(o.getAttribute('data-open'), o); return; }
     var c = ev.target.closest('[data-close]');
     if (c) { fechar(c.closest('#diag, #parceiro')); return; }
     if (ev.target.id === 'diag' || ev.target.id === 'parceiro') fechar(ev.target);
