@@ -1,0 +1,60 @@
+media:
+  input: assets/uploads
+  output: /assets/uploads
+content:
+  - name: agenda
+    label: Agenda de eventos
+    type: file
+    path: data/agenda.json
+    format: json
+    fields:
+      - name: eventos
+        label: Eventos
+        type: object
+        list: true
+        fields:
+          - { name: data, label: "Data (eventos passados somem sozinhos)", type: date }
+          - { name: dia, label: "Dia como aparece no site (ex.: 20/10)", type: string }
+          - { name: hora, label: "Horário e formato (ex.: 19h · online)", type: string }
+          - { name: titulo, label: Título, type: string }
+          - { name: descricao, label: Descrição curta, type: text }
+          - { name: cta, label: Texto do botão, type: string }
+          - { name: link, label: Link de inscrição, type: string }
+  - name: conteudos
+    label: Conteúdos (podcast, frameworks, skills)
+    type: file
+    path: data/conteudos.json
+    format: json
+    fields:
+      - name: itens
+        label: Itens
+        type: object
+        list: true
+        fields:
+          - name: formato
+            label: Formato
+            type: select
+            options:
+              values: [Podcast, Framework, Skill de IA, Artigo, Entrevista, Webinar]
+          - { name: titulo, label: Título, type: string }
+          - { name: texto, label: Descrição, type: text }
+          - { name: cta, label: Texto do botão, type: string }
+          - { name: link, label: "Link (PDF, vídeo ou página). Vazio leva para Em breve", type: string }
+          - { name: cta2, label: "Texto do segundo botão (opcional)", type: string }
+          - { name: link2, label: "Link do segundo botão (opcional)", type: string }
+  - name: cursos
+    label: Cursos
+    type: file
+    path: data/cursos.json
+    format: json
+    fields:
+      - name: cursos
+        label: Cursos
+        type: object
+        list: true
+        fields:
+          - { name: selo, label: "Selo (ex.: Certificação, Curso livre)", type: string }
+          - { name: titulo, label: Título, type: string }
+          - { name: texto, label: Descrição, type: text }
+          - { name: detalhes, label: "Detalhes (ex.: 4 blocos · acesso vitalício)", type: string }
+          - { name: link, label: "Página de detalhes do curso (ex.: certificacao.html)", type: string }
