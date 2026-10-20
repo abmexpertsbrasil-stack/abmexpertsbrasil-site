@@ -1,0 +1,12 @@
+{
+  "parceiros": [
+    {
+      "nome": "Bora",
+      "categoria": "Eventos",
+      "destaque": "Petit comitês para ABM",
+      "logo": "assets/img/parceiros/bora/image.jpg",
+      "texto": "A Bora cria experiências de relacionamento para empresas: jantares com chefs, parrillas, jornadas de drinks e workshops gastronômicos. São especialistas em petit comitês para ABM, com experiências variadas, e organizam local, menu, tempos e movimentos e até o RSVP.",
+      "cta": "Quero falar com a Bora"
+    }
+  ]
+}
