@@ -16,6 +16,13 @@
     },
     {
       "pagina": "certificacao",
+      "nome": "Gustavo André",
+      "cargo": "Certificado pelo ABM Experts",
+      "foto": "assets/img/depoimentos/gustavo/image.png",
+      "texto": "A certificação da ABM Experts resolve uma dor importante: a educação de ABM para o mercado brasileiro. Afinal, a grande maioria das coisas sobre ABM é de mercados bem diferentes da nossa realidade.\n\nPor mais que trabalhe há alguns anos com a metodologia, o curso me ajudou a refinar pontos da jornada que são muito importantes para um programa bem-sucedido de ABM.\n\nAlém da teoria, gostei também da parte prática de ter acesso às ferramentas de apoio que conectam a aula com a realidade.\n\nÉ um investimento que tem ROI comprovado. Recomendo!"
+    },
+    {
+      "pagina": "certificacao",
       "nome": "Rosa",
       "cargo": "Certificada pelo ABM Experts",
       "foto": "assets/img/depoimentos/avatar.svg",
