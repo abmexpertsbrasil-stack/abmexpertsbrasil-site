@@ -58,3 +58,23 @@ content:
           - { name: texto, label: Descrição, type: text }
           - { name: detalhes, label: "Detalhes (ex.: 4 blocos · acesso vitalício)", type: string }
           - { name: link, label: "Página de detalhes do curso (ex.: certificacao.html)", type: string }
+  - name: depoimentos
+    label: Depoimentos
+    type: file
+    path: data/depoimentos.json
+    format: json
+    fields:
+      - name: depoimentos
+        label: Depoimentos
+        type: object
+        list: true
+        fields:
+          - name: pagina
+            label: "Página onde aparece"
+            type: select
+            options:
+              values: [mentoria, certificacao]
+          - { name: nome, label: Nome, type: string }
+          - { name: cargo, label: "Descrição (ex.: Mentorada ABM Experts)", type: string }
+          - { name: foto, label: "Foto (quadrada)", type: image }
+          - { name: texto, label: "Depoimento (deixe uma linha em branco entre parágrafos)", type: text }
