@@ -20,6 +20,47 @@
     });
   }
 
+  /* Itens presentes em todas as páginas:
+     link "Para você" no menu e no rodapé, e o botão "Fale com o ABM Experts" (WhatsApp) */
+  var WA_FALE = 'https://wa.me/' + (CFG.whatsappNumero || '5561991228864') +
+    '?text=' + encodeURIComponent('Olá, vim pelo site da ABM Experts.');
+
+  document.querySelectorAll('.ax-nav-links, .ax-mobile-menu ul').forEach(function (ul) {
+    if (ul.querySelector('a[href="para-voce.html"]')) return;
+    var li = document.createElement('li');
+    li.innerHTML = '<a href="para-voce.html">Para você</a>';
+    var ref = ul.querySelector('a[href="para-empresas.html"]');
+    if (ref) ul.insertBefore(li, ref.parentNode); else ul.appendChild(li);
+  });
+
+  var menuMovel = document.getElementById('menu-movel');
+  if (menuMovel && !menuMovel.querySelector('.ax-fale-menu')) {
+    var bm = document.createElement('a');
+    bm.className = 'ax-btn ax-btn-outline-light ax-btn-lg ax-fale-menu';
+    bm.href = WA_FALE; bm.textContent = 'Fale com o ABM Experts';
+    menuMovel.appendChild(bm);
+  }
+
+  var navEmpresas = document.querySelector('footer nav[aria-label="Para empresas"]');
+  if (navEmpresas && !document.querySelector('footer nav[aria-label="Para você"]')) {
+    var nv = document.createElement('nav');
+    nv.setAttribute('aria-label', 'Para você');
+    nv.setAttribute('style', navEmpresas.getAttribute('style'));
+    nv.innerHTML = '<span style="font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #A9B3AE;">Para você</span>' +
+      '<a href="para-voce.html" style="color: #FFFFFF; text-decoration: none;">Mentoria individual</a>' +
+      '<a href="' + WA_FALE + '" style="color: #FFFFFF; text-decoration: none;">Fale com o ABM Experts</a>';
+    navEmpresas.parentNode.insertBefore(nv, navEmpresas);
+  }
+
+  if (!document.querySelector('.ax-fale')) {
+    var fale = document.createElement('a');
+    fale.className = 'ax-fale';
+    fale.href = WA_FALE;
+    fale.setAttribute('aria-label', 'Fale com o ABM Experts pelo WhatsApp');
+    fale.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8.5 8.5 0 0 1-12.4 7.5L3 21l1.6-5.3A8.5 8.5 0 1 1 21 12z"/></svg><span>Fale com o ABM Experts</span>';
+    document.body.appendChild(fale);
+  }
+
   /* Menu no celular */
   var toggle = document.querySelector('.ax-nav-toggle');
   var menu = document.getElementById('menu-movel');
