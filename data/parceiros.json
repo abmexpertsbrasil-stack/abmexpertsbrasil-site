@@ -7,6 +7,14 @@
       "logo": "assets/img/parceiros/bora/image.jpg",
       "texto": "A Bora cria experiências de relacionamento para empresas: jantares com chefs, parrillas, jornadas de drinks e workshops gastronômicos. São especialistas em petit comitês para ABM, com experiências variadas, e organizam local, menu, tempos e movimentos e até o RSVP.",
       "cta": "Quero falar com a Bora"
+    },
+    {
+      "nome": "OndaSkim",
+      "categoria": "Consultorias",
+      "destaque": "Social selling no LinkedIn",
+      "logo": "assets/img/parceiros/ondaskim/image.png",
+      "texto": "Consultoria pioneira em transformar executivos e lideranças B2B em influenciadores corporativos no LinkedIn, para construir autoridade e acelerar a geração de receita com a voz dos próprios líderes. Fundada por Lucas Gomes, tem metodologia própria aplicada em empresas como Sodexo, Capgemini, JLL, Grupo Publicis e Shell.",
+      "cta": "Quero falar com a OndaSkim"
     }
   ]
 }
