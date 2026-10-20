@@ -39,7 +39,7 @@ img { max-width: 100%; }
 .ax-depo blockquote::before { content: "\201C"; position: absolute; top: -18px; left: -2px; font-size: 88px; line-height: 88px; font-weight: 800; color: #00BF63; }
 .ax-depo figcaption { display: flex; align-items: center; gap: 16px; padding-top: 24px; border-top: 1px solid #DCE3DF; }
 .ax-depo-foto { width: 72px; height: 72px; border-radius: 999px; overflow: hidden; flex: none; }
-.ax-depo-foto img { display: block; width: 100%; height: 100%; object-fit: cover; transform: scale(1.4); transform-origin: 50% 30%; }
+.ax-depo-foto img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%; transform: scale(1.4); transform-origin: 50% 30%; }
 .ax-depo figcaption strong { display: block; font-size: 16px; line-height: 22px; }
 .ax-depo figcaption span span { display: block; font-size: 14px; line-height: 20px; color: #4D5752; }
 .ax-on-dark .ax-depo { background: #0E1210; border-color: #26302B; color: #FFFFFF; }
