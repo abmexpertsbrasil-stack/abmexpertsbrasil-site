@@ -47,6 +47,10 @@ img { max-width: 100%; }
 .ax-on-dark .ax-depo figcaption { border-top-color: #26302B; }
 .ax-on-dark .ax-depo figcaption span span { color: #A9B3AE; }
 @media (max-width: 600px) { .ax-depo { padding: 32px 20px 24px; } .ax-depo blockquote { font-size: 16px; line-height: 27px; } }
+/* Parceiros (lista em data/parceiros.json) */
+.ax-partner-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 24px; }
+.ax-partner .ax-partner-logo { height: 120px; background: #F7F7F7; }
+.ax-partner .ax-partner-logo img { max-height: 56px; max-width: 75%; }
 .ax-dialog-wrap form, .ax-modal form { display: grid; gap: 16px; }
 .ax-form-status { font-size: 14px; line-height: 21px; color: #B42318; }
 .ax-section-inner { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
