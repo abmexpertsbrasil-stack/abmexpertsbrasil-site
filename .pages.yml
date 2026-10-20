@@ -35,7 +35,7 @@ content:
             label: Formato
             type: select
             options:
-              values: [Podcast, Framework, Skill de IA, Artigo, Entrevista, Webinar]
+              values: [Vídeo, Podcast, Framework, Skill de IA, Artigo, Entrevista, Webinar]
           - { name: titulo, label: Título, type: string }
           - { name: texto, label: Descrição, type: text }
           - { name: cta, label: Texto do botão, type: string }
