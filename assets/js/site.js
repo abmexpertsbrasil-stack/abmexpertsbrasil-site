@@ -75,13 +75,15 @@
   }
 
   /* Listas que vêm dos arquivos em /data (editados pelo Pages CMS) */
-  var CHAVES = { agenda: 'eventos', conteudos: 'itens', cursos: 'cursos' };
+  var CHAVES = { agenda: 'eventos', conteudos: 'itens', cursos: 'cursos', depoimentos: 'depoimentos' };
 
   function renderLista(box, dados) {
     var alias = box.getAttribute('data-alias');
     var tpl = box.querySelector('template').innerHTML;
     var nome = box.getAttribute('data-list');
     var itens = (dados && dados[CHAVES[nome]]) || [];
+    var pagina = box.getAttribute('data-pagina');
+    if (pagina) itens = itens.filter(function (it) { return it.pagina === pagina; });
     if (nome === 'agenda') {
       var h = hoje();
       itens = itens.filter(function (e) { return !e.data || e.data >= h; })
