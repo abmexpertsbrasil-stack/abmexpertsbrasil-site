@@ -1,6 +1,15 @@
 {
   "itens": [
     {
+      "formato": "Vídeo",
+      "titulo": "GTM antes do ABM",
+      "texto": "Aula liberada do Módulo 1 da Certificação: a diferença entre GTM e ABM, por que um GTM mal estruturado drena o orçamento e como preparar o terreno antes de escolher as contas.",
+      "cta": "Assistir no YouTube",
+      "link": "https://www.youtube.com/watch?v=6GzvchST9Og",
+      "cta2": "Conhecer a certificação",
+      "link2": "certificacao.html"
+    },
+    {
       "formato": "Podcast",
       "titulo": "ABM na prática: erros e acertos do 1 to few",
       "texto": "Conversa B2B, EP. 42. Lucas Sousa com Guilherme Sboarim e Giuliano Duccini sobre as seis etapas de um programa 1:few. Cerca de 75 minutos.",
@@ -11,10 +20,46 @@
     },
     {
       "formato": "Framework",
+      "titulo": "Pessoas e processos em ABM",
+      "texto": "Material da Certificação sobre o alinhamento entre marketing, vendas e CS: mesmo ICP, contas sensíveis, território e papel de cada pessoa no programa.",
+      "cta": "Baixar o PDF",
+      "link": "assets/uploads/materiais/6._Pessoas_e_Processos_em_ABM.pdf",
+      "cta2": "",
+      "link2": ""
+    },
+    {
+      "formato": "Framework",
       "titulo": "Discovery de contas",
-      "texto": "Como mapear conta, comitê e oportunidade antes do primeiro contato.",
-      "cta": "Abrir o PDF",
+      "texto": "Planilha para mapear as contas-alvo e os contatos: porte, segmento, direcionamentos, obstáculos, concorrentes e decisores.",
+      "cta": "Baixar a planilha",
       "link": "",
+      "cta2": "",
+      "link2": ""
+    },
+    {
+      "formato": "Framework",
+      "titulo": "Score de concorrência",
+      "texto": "Planilha para dar peso a critérios como posicionamento, preço, marketing e marca e pontuar cada concorrente.",
+      "cta": "Baixar a planilha",
+      "link": "assets/uploads/materiais/Score_de_Concorre_ncia.xlsx",
+      "cta2": "",
+      "link2": ""
+    },
+    {
+      "formato": "Framework",
+      "titulo": "Questionário de buyer persona",
+      "texto": "Roteiro de perguntas para entrevistar clientes e o time comercial e definir a buyer persona.",
+      "cta": "Baixar o documento",
+      "link": "assets/uploads/materiais/Exemplo_de_questiona_rios_buyer_persona.docx",
+      "cta2": "",
+      "link2": ""
+    },
+    {
+      "formato": "Framework",
+      "titulo": "Demonstração de resultados",
+      "texto": "Planilha com pontuação de engajamento por conta, peso por cargo e um dashboard para apresentar o resultado do programa.",
+      "cta": "Baixar a planilha",
+      "link": "assets/uploads/materiais/Demonstrac_a_o_de_KPIS_para_empresa_1_1.xlsx",
       "cta2": "",
       "link2": ""
     },
@@ -40,15 +85,6 @@
       "formato": "Framework",
       "titulo": "Jornadas e plays",
       "texto": "Modelo para desenhar a jornada e os plays de cada tier de conta.",
-      "cta": "Abrir o PDF",
-      "link": "",
-      "cta2": "",
-      "link2": ""
-    },
-    {
-      "formato": "Framework",
-      "titulo": "Demonstração de resultados",
-      "texto": "Como apresentar o resultado do programa para a diretoria.",
       "cta": "Abrir o PDF",
       "link": "",
       "cta2": "",
