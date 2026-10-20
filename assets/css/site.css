@@ -19,6 +19,19 @@ img { max-width: 100%; }
   .ax-nav-toggle { display: inline-flex; }
 }
 @media (min-width: 901px) { .ax-mobile-menu { display: none !important; } }
+@media (min-width: 901px) and (max-width: 1240px) {
+  .ax-nav { gap: 20px; }
+  .ax-nav-links { gap: 16px; }
+  .ax-nav-links a { font-size: 13px; }
+}
+/* Botão fixo "Fale com o ABM Experts" (WhatsApp), discreto para não competir com os CTAs da página */
+.ax-fale { position: fixed; right: 16px; bottom: 16px; z-index: 30; display: inline-flex; align-items: center; gap: 8px; height: 48px; padding: 0 18px 0 14px; border-radius: 999px; background: #000000; color: #FFFFFF; border: 1px solid rgba(255,255,255,0.28); font-family: Montserrat, "Helvetica Neue", Arial, sans-serif; font-size: 14px; font-weight: 600; text-decoration: none; }
+.ax-fale svg { color: #00BF63; flex: none; }
+.ax-fale:hover { background: #1C211E; }
+.ax-fale:focus-visible { outline: 2px solid #00BF63; outline-offset: 2px; }
+.page > footer { padding-bottom: 64px; }
+.ax-fale-menu { align-self: stretch; }
+.ax-mobile-menu .ax-btn { align-self: stretch; }
 .ax-dialog-wrap form, .ax-modal form { display: grid; gap: 16px; }
 .ax-form-status { font-size: 14px; line-height: 21px; color: #B42318; }
 .ax-section-inner { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
