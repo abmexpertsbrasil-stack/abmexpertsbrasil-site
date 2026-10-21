@@ -1,13 +1,22 @@
 {
   "itens": [
     {
+      "formato": "Artigo",
+      "titulo": "Event-led growth no ABM: quando o evento entra na jornada",
+      "texto": "Em que etapa do ABM cada evento funciona, por que o petit comitê não é topo de funil, a jornada da CRMBonus e os dados da Bora para planejar sala, data, convidados e operação.",
+      "cta": "Ler o artigo",
+      "link": "artigo-event-led-growth.html",
+      "cta2": "Assistir ao webinar",
+      "link2": "https://www.youtube.com/watch?v=mqHre_eelm8"
+    },
+    {
       "formato": "Vídeo",
       "titulo": "Event-Led Growth e ABM: eventos para fechar contas enterprise",
       "texto": "Gravação do webinar com Bruno Barroso (Bora) e Lucas Sousa: onde o evento entra no ABM, as quatro famílias de evento, dados de mais de 200 eventos petit comitê e os resultados da CRMBonus.",
       "cta": "Assistir no YouTube",
       "link": "https://www.youtube.com/watch?v=mqHre_eelm8",
-      "cta2": "",
-      "link2": ""
+      "cta2": "Ler o artigo",
+      "link2": "artigo-event-led-growth.html"
     },
     {
       "formato": "Vídeo",
