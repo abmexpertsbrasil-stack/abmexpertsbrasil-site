@@ -2,6 +2,15 @@
   "itens": [
     {
       "formato": "Vídeo",
+      "titulo": "Event-Led Growth e ABM: eventos para fechar contas enterprise",
+      "texto": "Gravação do webinar com Bruno Barroso (Bora) e Lucas Sousa: onde o evento entra no ABM, as quatro famílias de evento, dados de mais de 200 eventos petit comitê e os resultados da CRMBonus.",
+      "cta": "Assistir no YouTube",
+      "link": "https://www.youtube.com/watch?v=mqHre_eelm8",
+      "cta2": "",
+      "link2": ""
+    },
+    {
+      "formato": "Vídeo",
       "titulo": "GTM antes do ABM",
       "texto": "Aula liberada do Módulo 1 da Certificação: a diferença entre GTM e ABM, por que um GTM mal estruturado drena o orçamento e como preparar o terreno antes de escolher as contas.",
       "cta": "Assistir no YouTube",
