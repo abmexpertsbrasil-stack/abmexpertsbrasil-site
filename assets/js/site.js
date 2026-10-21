@@ -75,6 +75,50 @@
     document.body.appendChild(fale);
   }
 
+  /* Google Analytics 4 com aviso de cookies (LGPD).
+     A medição só grava cookies depois que a pessoa clica em "Aceitar". */
+  if (CFG.gaId) {
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
+    var CHAVE_COOKIES = 'abmx-cookies';
+    var escolha = null;
+    try { escolha = localStorage.getItem(CHAVE_COOKIES); } catch (e) {}
+    window.gtag('consent', 'default', {
+      analytics_storage: escolha === 'aceito' ? 'granted' : 'denied',
+      ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied'
+    });
+    window.gtag('js', new Date());
+    window.gtag('config', CFG.gaId);
+    var tagGa = document.createElement('script');
+    tagGa.async = true;
+    tagGa.src = 'https://www.googletagmanager.com/gtag/js?id=' + CFG.gaId;
+    document.head.appendChild(tagGa);
+
+    var mostrarAviso = function () {
+      if (document.querySelector('.ax-cookies')) return;
+      var aviso = document.createElement('div');
+      aviso.className = 'ax-cookies';
+      aviso.setAttribute('role', 'region');
+      aviso.setAttribute('aria-label', 'Aviso de cookies');
+      aviso.innerHTML = '<p>Usamos cookies do Google Analytics para entender quantas pessoas visitam o site e de onde elas vêm. Saiba mais na <a href="privacidade.html">Política de privacidade</a>.</p>' +
+        '<div class="ax-cookies-acoes"><button type="button" class="ax-btn ax-btn-primary" data-cookies="aceito">Aceitar</button><button type="button" class="ax-btn ax-btn-outline-light" data-cookies="recusado">Recusar</button></div>';
+      document.body.appendChild(aviso);
+      document.body.classList.add('com-aviso-cookies');
+      aviso.addEventListener('click', function (ev) {
+        var b = ev.target.closest('[data-cookies]'); if (!b) return;
+        var valor = b.getAttribute('data-cookies');
+        try { localStorage.setItem(CHAVE_COOKIES, valor); } catch (e) {}
+        window.gtag('consent', 'update', { analytics_storage: valor === 'aceito' ? 'granted' : 'denied' });
+        aviso.remove();
+        document.body.classList.remove('com-aviso-cookies');
+      });
+    };
+    if (!escolha) mostrarAviso();
+    document.querySelectorAll('[data-cookies-rever]').forEach(function (b) {
+      b.addEventListener('click', function (ev) { ev.preventDefault(); mostrarAviso(); });
+    });
+  }
+
   /* Menu no celular */
   var toggle = document.querySelector('.ax-nav-toggle');
   var menu = document.getElementById('menu-movel');
