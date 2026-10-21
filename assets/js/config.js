@@ -6,5 +6,7 @@ window.ABMX_CONFIG = {
   // WhatsApp que recebe o resumo de cada formulário (com DDI 55 e DDD, só números)
   whatsappNumero: '5561991228864',
   // Chave do CallMeBot: envia o resumo para o WhatsApp acima
-  callmebotKey: ''
+  callmebotKey: '',
+  // Google Analytics 4 (conta abmexpertsbrasil@gmail.com, propriedade abmexpertsbrasil.com)
+  gaId: 'G-XMC249Y410'
 };
