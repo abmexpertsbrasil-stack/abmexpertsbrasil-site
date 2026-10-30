@@ -1,13 +1,22 @@
 {
   "itens": [
     {
+      "formato": "Artigo",
+      "titulo": "Planejamento de ABM para 2027: o que considerar antes de fechar o plano",
+      "texto": "Lista de contas, potencial por conta, métricas primárias e secundárias, orçamento a partir da meta comercial e o papel dos eventos, a partir do benchmark da comunidade de 28/10.",
+      "cta": "Ler o artigo",
+      "link": "artigo-planejamento-abm-2027.html",
+      "cta2": "Assistir ao benchmark",
+      "link2": "https://www.youtube.com/watch?v=9Jl-jbUiTzg"
+    },
+    {
       "formato": "Vídeo",
       "titulo": "Planejamento de marketing B2B e ABM 2027: métricas, orçamento e casos reais",
       "texto": "Gravação do benchmark de 28/10 com líderes de marketing e vendas B2B: como provar o valor do ABM, métricas primárias e secundárias, ferramentas de dados para o mercado brasileiro, orçamento a partir da meta comercial e o papel dos eventos.",
       "cta": "Assistir no YouTube",
       "link": "https://www.youtube.com/watch?v=9Jl-jbUiTzg",
-      "cta2": "",
-      "link2": ""
+      "cta2": "Ler o artigo",
+      "link2": "artigo-planejamento-abm-2027.html"
     },
     {
       "formato": "Artigo",
