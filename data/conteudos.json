@@ -1,6 +1,15 @@
 {
   "itens": [
     {
+      "formato": "Vídeo",
+      "titulo": "Planejamento de marketing B2B e ABM 2027: métricas, orçamento e casos reais",
+      "texto": "Gravação do benchmark de 28/10 com líderes de marketing e vendas B2B: como provar o valor do ABM, métricas primárias e secundárias, ferramentas de dados para o mercado brasileiro, orçamento a partir da meta comercial e o papel dos eventos.",
+      "cta": "Assistir no YouTube",
+      "link": "https://www.youtube.com/watch?v=9Jl-jbUiTzg",
+      "cta2": "",
+      "link2": ""
+    },
+    {
       "formato": "Artigo",
       "titulo": "Event-led growth no ABM: quando o evento entra na jornada",
       "texto": "Em que etapa do ABM cada evento funciona, por que o petit comitê não é topo de funil, a jornada da CRMBonus e os dados da Bora para planejar sala, data, convidados e operação.",
