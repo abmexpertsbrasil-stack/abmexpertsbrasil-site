@@ -1,6 +1,15 @@
 {
   "itens": [
     {
+      "formato": "Vídeo",
+      "titulo": "Do LinkedIn ao presencial: ABM e eventos para escalar vendas B2B em 2027",
+      "texto": "Webinar da OndaSkim com Lucas Gomes, Bruno Barroso (Bora) e Lucas Sousa: que evento usar em cada etapa da jornada, como o LinkedIn dos executivos nutre o relacionamento entre um evento e outro e como marcar o próximo touch point.",
+      "cta": "Assistir no YouTube",
+      "link": "https://www.youtube.com/watch?v=8b4crxNt5P0",
+      "cta2": "",
+      "link2": ""
+    },
+    {
       "formato": "Artigo",
       "titulo": "Planejamento de ABM para 2027: o que considerar antes de fechar o plano",
       "texto": "Lista de contas, potencial por conta, métricas primárias e secundárias, orçamento a partir da meta comercial e o papel dos eventos, a partir do benchmark da comunidade de 28/10.",
