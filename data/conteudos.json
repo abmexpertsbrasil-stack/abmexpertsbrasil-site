@@ -1,13 +1,22 @@
 {
   "itens": [
     {
+      "formato": "Artigo",
+      "titulo": "Do LinkedIn ao presencial: como integrar eventos e relacionamento digital no ABM",
+      "texto": "Que evento usar em cada etapa da conta, como o LinkedIn dos executivos sustenta o relacionamento entre um encontro e outro e o que fazer antes, durante e depois de cada evento. Com infográficos.",
+      "cta": "Ler o artigo",
+      "link": "artigo-linkedin-ao-presencial.html",
+      "cta2": "Assistir ao webinar",
+      "link2": "https://www.youtube.com/watch?v=8b4crxNt5P0"
+    },
+    {
       "formato": "Vídeo",
       "titulo": "Do LinkedIn ao presencial: ABM e eventos para escalar vendas B2B em 2027",
       "texto": "Webinar da OndaSkim com Lucas Gomes, Bruno Barroso (Bora) e Lucas Sousa: que evento usar em cada etapa da jornada, como o LinkedIn dos executivos nutre o relacionamento entre um evento e outro e como marcar o próximo touch point.",
       "cta": "Assistir no YouTube",
       "link": "https://www.youtube.com/watch?v=8b4crxNt5P0",
-      "cta2": "",
-      "link2": ""
+      "cta2": "Ler o artigo",
+      "link2": "artigo-linkedin-ao-presencial.html"
     },
     {
       "formato": "Artigo",
